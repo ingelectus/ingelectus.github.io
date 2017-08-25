@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<video id="bgvideo" class="bgvideo" playsinline autoplay muted loop>
+  <source src="/assets/vid/bgvideo.webm" type="video/webm">
+  <source src="/assets/vid/bgvideo.mp4" type="video/mp4">
+</video>
+
+<div class="cover-desk d-none d-md-block">
+  <div class="cover-lead">
+    <h2>Not Just An Electrical Solution.</h2>
+    <h1>We Energyze The Future.</h1>
+  </div>
+
+  <div class="cover-nav">
+    <ul class="nav justify-content-center">
+      {% for link in site.data.navigation.cover %}
+        {% if link.url contains 'http' %}
+          {% assign domain = '' %}
+        {% else %}
+          {% assign domain = site.url | append: site.baseurl %}
+        {% endif %}
+        <li class="nav-item cover-nav-item">
+          <a class="nav-link cover-nav-link rounded" href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+
+<div class="cover-mobile d-md-none">
+  <div class="cover-lead">
+    <h2>Not Just An Electrical Solution.</h2>
+    <h1>We Energyze The Future.</h1>
+  </div>
+
+  <div class="cover-nav">
+    <ul class="nav flex-column justify-content-center">
+      {% for link in site.data.navigation.cover %}
+        {% if link.url contains 'http' %}
+          {% assign domain = '' %}
+        {% else %}
+          {% assign domain = site.url | append: site.baseurl %}
+        {% endif %}
+        <li class="nav-item cover-nav-item">
+          <a class="nav-link cover-nav-link" href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
