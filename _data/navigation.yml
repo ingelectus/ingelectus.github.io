@@ -1,0 +1,40 @@
+
+highlight:
+  - title: "PPC"
+    url: /products/ppc/
+  - title: "SynchroTeq"
+    url: /products/vizimax/
+  - title: "Innovation"
+    url: /research/
+
+main:
+  - title: "News"
+    url: /posts/
+  - title: "About"
+    url: /about/
+  - title: "Products"
+    url: /products/
+  - title: "Services"
+    url: /services/
+  - title: "Research"
+    url: /research/
+  - title: "Contact"
+    url: /about/contact/
+
+cover:
+  - title: "Discover"
+    url: /products/
+  - title: "Customize"
+    url: /services/
+  - title: "Imagine"
+    url: /research/
+
+footer:
+  - title: "Privacy & Legal"
+    url: /about/legal/
+  - title: "Careers"
+    url: /about/careers/
+  - title: "Partners"
+    url: /about/partners/
+  - title: "Support"
+    url: /about/supports/

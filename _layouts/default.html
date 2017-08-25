@@ -1,0 +1,25 @@
+---
+---
+
+<!doctype html>
+<!--
+  Copyright 2017 Ingelectus - ingelectus.com | @ingelectus
+-->
+<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+  <head>
+    {% include head.html %}
+  </head>
+
+  <body class="wrapper layout-{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+
+    {% include header.html %}
+
+    <div class="mind-header">
+      {{ content }}
+    </div>
+
+    {% include footer.html %}
+    {% include scripts.html %}
+
+  </body>
+</html>
