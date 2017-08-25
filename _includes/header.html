@@ -1,0 +1,31 @@
+{% if link.url contains 'http' %}
+  {% assign domain = '' %}
+{% else %}
+  {% assign domain = site.url | append: site.baseurl %}
+{% endif %}
+
+<header>
+  <nav class="navbar fixed-top navbar-dark header-bg row">
+    <div class="col">
+      <a class="navbar-brand header-navbar-brand" href="{{ '/' | absolute_url }}"><img src="/assets/img/logo.png" height="42px"/></a>
+    </div>
+    <div class="col-8 d-none d-md-block">
+      <ul class="nav justify-content-center">
+        {% for link in site.data.navigation.highlight %}
+          <li class="nav-item">
+            <a class="nav-link header-nav-link" href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="col">
+      <button class="navbar-toggler pull-right" style="cursor: pointer" type="button" data-toggle="collapse" data-target="#sidebar" aria-expanded="false" aria-controls="sidebar">
+        <small><span class="navbar-toggler-icon"></span></small>
+      </button>
+    </div>
+  </nav>
+
+
+  {% include sidebar.html %}
+  
+</header>
