@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="container py-5">
+
+  <h2>{{page.title}}</h2>
+  <hr/>
+
+  <div class="row py-3">
+    <div class="col" data-spy="scroll" data-target="#scrollspy" data-offset="0">
+      {{content}}
+    </div>
+    {% if page.scrollspy %}
+    <div class="col-3 d-none d-md-block">
+      <ul class="nav flex-column" id="scrollspy">
+      {% for spy in page.scrollspy %}
+        <li>
+          <a href="#{{spy.id}}">{{ spy.name }}</a>
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </div>
+
+</div>
