@@ -2,7 +2,6 @@
 layout: default
 ---
 
-
 {% if page.hero %}
   <div class="hero"{% if page.hero.image %} style="background-image: url({{ page.hero.image }});"{% endif %}>
     <div class="hero-filter">
@@ -37,7 +36,7 @@ layout: default
   </div>
 {% endif %}
 
-<div class="container{% unless page.hero %} mind-header{% endunless %}">
+<div class="container {% if page.hero %}mind-hero{% else %}mind-header{% endif %}">
 
   {% unless page.hero %}
     <div class="pt-5">

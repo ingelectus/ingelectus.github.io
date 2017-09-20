@@ -1,19 +1,13 @@
 
-{% if link.url contains 'http' %}
-  {% assign domain = '' %}
-{% else %}
-  {% assign domain = site.url | append: site.baseurl %}
-{% endif %}
-
 <footer class="footer-bg">
   <div class="container">
     <ul class="nav flex-column flex-md-row justify-content-center">
       <li class="nav-item">
-        <a class="nav-link footer-nav-link" href="{{ domain }}/about/">{{ site.name | default: site.title }} &copy; {{ site.time | date: '%Y' }}</a>
+        <a class="nav-link footer-nav-link" href="/about/">{{ site.name | default: site.title }} &copy; {{ site.time | date: '%Y' }}</a>
       </li>
       {% for link in site.data.navigation.footer %}
         <li class="nav-item">
-          <a class="nav-link footer-nav-link" href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+          <a class="nav-link footer-nav-link" href="{{ link.url }}">{{ link.title }}</a>
         </li>
       {% endfor %}
     </ul>

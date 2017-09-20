@@ -1,6 +1,5 @@
 ---
 layout: page
-sitemap: false
 permalink: /careers/
 title: Careers
 menu: about
