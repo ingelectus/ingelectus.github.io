@@ -17,13 +17,8 @@ layout: default
   <div class="cover-nav">
     <ul class="nav justify-content-center">
       {% for link in site.data.navigation.cover %}
-        {% if link.url contains 'http' %}
-          {% assign domain = '' %}
-        {% else %}
-          {% assign domain = site.url | append: site.baseurl %}
-        {% endif %}
         <li class="nav-item cover-nav-item">
-          <a class="nav-link cover-nav-link rounded" href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+          <a class="nav-link cover-nav-link rounded" href="{{ link.url }}">{{ link.title }}</a>
         </li>
       {% endfor %}
     </ul>
@@ -40,13 +35,8 @@ layout: default
   <div class="cover-nav">
     <ul class="nav flex-column justify-content-center">
       {% for link in site.data.navigation.cover %}
-        {% if link.url contains 'http' %}
-          {% assign domain = '' %}
-        {% else %}
-          {% assign domain = site.url | append: site.baseurl %}
-        {% endif %}
         <li class="nav-item cover-nav-item">
-          <a class="nav-link cover-nav-link" href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+          <a class="nav-link cover-nav-link" href="{{ link.url }}">{{ link.title }}</a>
         </li>
       {% endfor %}
     </ul>

@@ -1,6 +1,5 @@
 ---
 layout: page
-sitemap: false
 permalink: /services/
 title: Services
 menu: organization

@@ -1,6 +1,5 @@
 ---
 layout: page
-sitemap: false
 permalink: /products/
 title: Products
 menu: organization

@@ -1,6 +1,5 @@
 ---
 layout: page
-sitemap: false
 permalink: /about/
 title: About Ingelectus
 menu: about

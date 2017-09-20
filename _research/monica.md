@@ -1,6 +1,5 @@
 ---
 layout: page
-sitemap: false
 title: MONICA
 menu: organization
 hero: 
@@ -12,8 +11,6 @@ hero:
       url: "#top"
       highlight: true
 
-# Markdown reference: https://kramdown.gettalong.org/quickref.html
-# Bootstrap reference: https://getbootstrap.com/docs/4.0/
 ---
 
 

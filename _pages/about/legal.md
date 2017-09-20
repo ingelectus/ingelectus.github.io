@@ -1,6 +1,5 @@
 ---
 layout: page
-sitemap: false
 permalink: /about/legal/
 title: Legal
 menu: about

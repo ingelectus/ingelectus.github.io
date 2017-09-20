@@ -1,6 +1,5 @@
 ---
 layout: page
-sitemap: false
 permalink: /about/partners/
 title: Partners
 menu: about

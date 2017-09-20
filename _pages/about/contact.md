@@ -1,6 +1,5 @@
 ---
 layout: page
-sitemap: false
 permalink: /about/contact/
 title: Contact
 menu: about
