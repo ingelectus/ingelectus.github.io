@@ -1,0 +1,18 @@
+{% assign title = post.title %}
+{% assign author = post.author %}
+{% assign date = post.date | date: "%B %d, %Y" %}
+
+<article itemscope itemtype="http://schema.org/CreativeWork">
+  <h2 class="mb-0 pb-0" itemprop="headline">
+    <a class="text-dark" href="{{ post.url }}" rel="permalink">{{ title }}</a>
+  </h2>
+  <p class="mb-0"><small>{{ author }}</small></p>
+  <p class="mb-0"><small>{{ date }}</small></p>
+  {% if post.read_time %}
+    <p class="mb-0"><small><i class="fa fa-clock-o" aria-hidden="true"></i> {% include util/read-time.html %}</small></p>
+  {% endif %}
+  {% if post.excerpt %}
+    <p class="mt-4 mb-4" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 400 }}</p>
+    <p><a href="{{ post.url }}">Continue reading</a></p>
+  {% endif %}
+</article>

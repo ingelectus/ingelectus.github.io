@@ -2,25 +2,112 @@
 layout: default
 ---
 
-<div class="container py-5">
 
-  <h2>{{page.title}}</h2>
-  <hr/>
+{% if page.hero %}
+  <div class="hero"{% if page.hero.image %} style="background-image: url({{ page.hero.image }});"{% endif %}>
+    <div class="hero-filter">
+      <div class="mind-header">
+        <div class="container py-5">
+          {% if page.menu %}
+          <span class="d-none d-md-block pull-right">
+            <ul class="nav flex-row page-menu">
+              {% for item in site.data.menu[page.menu] %}
+                <li class="nav-item{% if page.url == item.url %} active{% endif %}" >
+                  <a class="nav-link" href="{{item.url}}">{{ item.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </span>
+          {% endif %}
+          <div class="hero-title">{{page.title}}</div>
+          <hr />
+          <div class="hero-description">{{ page.hero.description }}</div>
+          <div class="hero-buttons">
+            <ul class="nav flex-column flex-md-row">
+              {% for button in page.hero.buttons %}
+                <li class="nav-item" >
+                  <a class="nav-link{% if button.highlight %} bg-red{% endif %}" href="{{button.url}}">{{ button.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+<div class="container{% unless page.hero %} mind-header{% endunless %}">
+
+  {% unless page.hero %}
+    <div class="pt-5">
+      {% if page.menu %}
+      <div class="d-none d-md-block pull-right">
+        <ul class="nav flex-row page-menu">
+          {% for item in site.data.menu[page.menu] %}
+            <li class="nav-item{% if page.url == item.url %} active{% endif %}" >
+              <a class="nav-link" href="{{item.url}}">{{ item.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+      <div class="display-4">{{page.title}}</div>
+      <hr/>
+    </div>
+  {% endunless %}
 
   <div class="row py-3">
-    <div class="col" data-spy="scroll" data-target="#scrollspy" data-offset="0">
+    <div class="col">
+      {% if page.downloads %}
+        <div class="d-md-none" id="downloads">
+          <h1>Downloads</h1>
+          <ul class="nav flex-column">
+            {% for download in page.downloads %}
+              <li class="nav-item">
+                <a class="nav-link" href="{{download.url}}" download{% if download.filename %}="{{ download.filename }}"{% endif %}>{{ download.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+          <hr/>
+        </div>
+      {% endif %}
       {{content}}
     </div>
-    {% if page.scrollspy %}
-    <div class="col-3 d-none d-md-block">
-      <ul class="nav flex-column" id="scrollspy">
-      {% for spy in page.scrollspy %}
-        <li>
-          <a href="#{{spy.id}}">{{ spy.name }}</a>
-        </li>
-      {% endfor %}
-      </ul>
-    </div>
+    {% if page.scrollspy or page.downloads %}
+      <div class="col-3 d-none d-md-block" id="scrollspy">
+        <ul class="scrollspy nav flex-column">
+        {% if page.downloads %}
+          <li class="nav-item">
+            <a class="nav-link disabled">Downloads</a>
+          </li>
+          {% for download in page.downloads %}
+            <li class="nav-item" >
+              <a class="nav-link" href="{{download.url}}" download{% if download.filename %}="{{ download.filename }}"{% endif %}>{{ download.title }}</a>
+            </li>
+          {% endfor %}
+          <li class="nav-item">
+            <hr/>
+          </li>
+        {% endif %}
+        {% for spy in page.scrollspy %}
+          {% if spy.id %}
+            <li class="nav-item">
+              <a class="nav-link" href="#{{spy.id}}">{{ spy.name }}</a>
+            </li>
+          {% else %}
+            <li class="nav-item">
+              <a class="nav-link disabled">{{ spy.name }}</a>
+            </li>
+            {% for subspy in spy.subspies %}
+              <li class="nav-item">
+                <a class="nav-link" href="#{{subspy.id}}">{{ subspy.name }}</a>
+              </li>
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
     {% endif %}
   </div>
 

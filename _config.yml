@@ -8,9 +8,10 @@
 # Site Settings
 locale                   : "en_US"
 title                    : "Ingelectus"
-title_separator          : "|"
+title_separator          : "&#x7c;"
 name                     : "Ingelectus"
 description              : "We energize the future."
+keywords                 : "Ingelectus, Innovative Electrical Solutions, Electric, Electrical Engineering, Charging, Battery, Smartgrids, Electrical Vehicle, EV, Optimization, Forecasting, Energy Consumption Forecasting, State Estimation, CSD, Control Switching Device, Point of Wave, Integration Studies, Electrical Device Modelling, Modelling, PPS/E Model, DigSilent Model, PSCAD Model, ATP Model, Matlab Model, Photovoltaic, PV, Battery Energy Storage System, BESS, Power Plant Controller, PPC, Real Time Thermal Rating, RTTR, Consulting, Renewable, Operation, Solar Plant, Wind Plant, FACTS, Transformer, Inverter, News, Updates, Price, Careers, Jobs"
 url                      : "https://ingelectus.com"
 baseurl                  : # default: ""
 repository               : # GitHub username/repo-name
@@ -122,9 +123,6 @@ sass:
 
 
 # Outputting
-permalink: /posts/:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
 timezone: Europe/Madrid # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 enconding: utf-8
 
@@ -136,6 +134,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-redirect-from
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -144,6 +143,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-redirect-from
 
 
 # Archives
@@ -158,10 +158,10 @@ whitelist:
 #  - <base_path/my-awesome-category/index.html ~> path: /
 category_archive:
   type: liquid
-  path: /posts/categories/
+  path: /blog/categories/
 tag_archive:
   type: liquid
-  path: /posts/tags/
+  path: /blog/tags/
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
@@ -182,19 +182,28 @@ compress_html:
   ignore:
     envs: development
 
-
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: # true
-      share: true
-      related: true
+# Collections
+collections:
+  posts:
+    output: true
+    layout: post
+    permalink: /blog/:title/
+    read_time: true
+    share: true
+    related: true
+  pages:
+    output: true
+  products:
+    output: true
+    permalink: /products/:name/
+  services:
+    output: true
+    permalink: /services/:name/
+  research:
+    output: true
+    permalink: /research/:name/
+  jobs:
+    output: true
+    permalink: /careers/:name/
 
 github: [metadata]
