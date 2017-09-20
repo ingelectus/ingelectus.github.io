@@ -1,14 +1,19 @@
 
-header {
+#header {
   min-width: 300px;
 }
 
+.header-nav-active {
+  color: #d0d0d0 !important;
+}
+
 .header-navbar-brand {
-  padding: 0!important;
-  margin: 0!important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .header-nav-link {
+  font-size: 0.8rem;
   color: #fff;
   cursor: pointer;
   transition: color 0.15s ease-in-out;
@@ -19,7 +24,7 @@ header {
 }
 
 .header-nav-link:hover {
-  color: #d0d0d0;
+  color: #f0f0f0;
 }
 
 .header-bg {

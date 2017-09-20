@@ -1,19 +1,14 @@
-{% if link.url contains 'http' %}
-  {% assign domain = '' %}
-{% else %}
-  {% assign domain = site.url | append: site.baseurl %}
-{% endif %}
 
 <header>
-  <nav class="navbar fixed-top navbar-dark header-bg row">
+  <nav id="header" class="navbar fixed-top navbar-dark header-bg row">
     <div class="col">
-      <a class="navbar-brand header-navbar-brand" href="{{ '/' | absolute_url }}"><img src="/assets/img/logo.png" height="42px"/></a>
+      <a class="navbar-brand header-navbar-brand" href="{{ '/' | absolute_url }}"><img src="/assets/img/logo.png" height="42px" title="Ingelectus S.L."/></a>
     </div>
     <div class="col-8 d-none d-md-block">
       <ul class="nav justify-content-center">
         {% for link in site.data.navigation.highlight %}
           <li class="nav-item">
-            <a class="nav-link header-nav-link" href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+            <a class="nav-link header-nav-link{% if page.url == link.url %} header-nav-active{% endif %}" href="{{ link.url }}">{{ link.title }}</a>
           </li>
         {% endfor %}
       </ul>

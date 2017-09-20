@@ -4,12 +4,12 @@ highlight:
     url: /products/ppc/
   - title: "SynchroTeq"
     url: /products/vizimax/
-  - title: "Innovation"
-    url: /research/
+  - title: "Modelling & Simulation"
+    url: /services/modelling-and-simulation/
 
 main:
   - title: "News"
-    url: /posts/
+    url: /blog/
   - title: "About"
     url: /about/
   - title: "Products"
@@ -33,8 +33,8 @@ footer:
   - title: "Privacy & Legal"
     url: /about/legal/
   - title: "Careers"
-    url: /about/careers/
+    url: /careers/
   - title: "Partners"
     url: /about/partners/
   - title: "Support"
-    url: /about/supports/
+    url: /about/support/

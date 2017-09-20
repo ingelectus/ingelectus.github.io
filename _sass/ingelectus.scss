@@ -1,9 +1,16 @@
 
 /* components */
 @import 'ingelectus/base';
+@import 'ingelectus/fonts';
 @import 'ingelectus/header';
 @import 'ingelectus/footer';
 @import 'ingelectus/sidebar';
+@import 'ingelectus/page';
+@import 'ingelectus/menu';
+@import 'ingelectus/scrollspy';
+@import 'ingelectus/video';
+@import 'ingelectus/hero';
+@import 'ingelectus/spinner';
 
 /* pages */
 @import 'ingelectus/pages/home';

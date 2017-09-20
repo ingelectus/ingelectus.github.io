@@ -1,0 +1,11 @@
+---
+sitemap: false
+permalink: /blog/posts.json
+---
+{
+  "posts" : [
+    {% for post in site.posts %}
+    "{{ post.url }}"{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}

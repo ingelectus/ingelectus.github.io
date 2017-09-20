@@ -1,0 +1,12 @@
+---
+sitemap: false
+permalink: /careers/jobs.json
+---
+
+{
+  "jobs" : [
+    {% for job in site.jobs %}
+    "{{ job.url }}"{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}

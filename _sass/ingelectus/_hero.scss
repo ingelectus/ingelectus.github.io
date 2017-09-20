@@ -1,0 +1,89 @@
+.hero {
+  min-height: 60%;
+  height: 60%;
+  background: rgba(100,100,100,1) no-repeat center center;
+  background-size: cover;
+}
+
+.hero .hero-filter {
+  min-height: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.hero hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(255,255,255,0.8);
+}
+
+.hero .hero-title {
+  font-size: 1.5rem!important;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.hero .page-menu .nav-link {
+  color: #fff;
+}
+
+.hero .hero-description {
+  text-align: justify;
+  width: 50%;
+  font-size: 1.2rem!important;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.hero .hero-buttons .nav {
+  padding-top: 30px;
+}
+
+.hero .hero-buttons .nav-item {
+  padding: 6px;
+}
+
+.hero .hero-buttons .nav-link {
+  font-size: 0.8rem!important;
+  border: 1px solid;
+  border-color: transparent;
+  background-color: rgba(0,0,0,0.65);
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-transition: border-color 0.5s ease-out;
+  -moz-transition: border-color 0.5s ease-out;
+  -o-transition: border-color 0.5s ease-out;
+  transition: border-color 0.5s ease-out;
+}
+
+.hero .hero-buttons .bg-red {
+  background-color: rgba(255,0,0,0.65);
+}
+
+.hero .hero-buttons .nav-link:hover {
+  border-color: #fff;
+}
+
+@media (max-width: 767px) {
+  .hero {
+    text-align: center;
+    min-height: 100%;
+  }
+
+  .hero .hero-description {
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero .hero-buttons .nav-link {
+    font-size: 1rem!important;
+  }
+}

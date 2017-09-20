@@ -16,6 +16,14 @@
   color: #fff;
 }
 
+.sidebar-nav-active {
+  color: #d0d0d0 !important;
+}
+
+.sidebar-nav-more {
+  color: #fff !important;
+}
+
 .sidebar-nav-link {
   color: #fff;
   cursor: pointer;
@@ -27,7 +35,7 @@
 }
 
 .sidebar-nav-link:hover {
-  color: #d0d0d0;
+  color: #f0f0f0;
 }
 
 @media (max-width: 767px) {

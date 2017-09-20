@@ -10,13 +10,11 @@
     {% include head.html %}
   </head>
 
-  <body class="wrapper layout-{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+  <body class="wrapper layout-{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}"{% if page.scrollspy %} data-spy="scroll" data-target="#scrollspy" data-offset="58"{% endif %}>
 
     {% include header.html %}
 
-    <div class="mind-header">
-      {{ content }}
-    </div>
+    {{ content }}
 
     {% include footer.html %}
     {% include scripts.html %}
