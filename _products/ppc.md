@@ -14,7 +14,7 @@ hero:
       url: "#top"
 downloads:
   - title: PPC whitepaper
-    url: /downloads/ppc_whitepaper.pdf
+    url: /downloads/ppc_whitepaper11.pdf
 
 ---
 
