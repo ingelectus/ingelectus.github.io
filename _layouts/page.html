@@ -6,6 +6,21 @@ layout: default
   <div class="hero"{% if page.hero.image %} style="background-image: url({{ page.hero.image }});"{% endif %}>
     <div class="hero-filter">
       <div class="mind-header">
+        {% if page.menu %}
+        <div class="container d-md-none">
+          <table class="table table-sm table-responsive table-menu">
+            <tbody>
+              <tr class="page-menu">
+                {% for item in site.data.menu[page.menu] %}
+                  <td class="nav-item{% if page.url == item.url %} active{% endif %}" >
+                    <a class="nav-link" href="{{item.url}}">{{ item.title }}</a>
+                  </td>
+                {% endfor %}
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        {% endif %}
         <div class="container py-5">
           {% if page.menu %}
           <span class="d-none d-md-block pull-right">
@@ -39,6 +54,21 @@ layout: default
 <div class="container {% if page.hero %}mind-hero{% else %}mind-header{% endif %}">
 
   {% unless page.hero %}
+    {% if page.menu %}
+      <div class="d-md-none">
+        <table class="table table-sm table-responsive table-menu">
+          <tbody>
+            <tr class="page-menu">
+              {% for item in site.data.menu[page.menu] %}
+                <td class="nav-item{% if page.url == item.url %} active{% endif %}" >
+                  <a class="nav-link" href="{{item.url}}">{{ item.title }}</a>
+                </td>
+              {% endfor %}
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    {% endif %}
     <div class="pt-5">
       {% if page.menu %}
       <div class="d-none d-md-block pull-right">
@@ -64,7 +94,7 @@ layout: default
           <ul class="nav flex-column">
             {% for download in page.downloads %}
               <li class="nav-item">
-                <a class="nav-link" href="{{download.url}}" download{% if download.filename %}="{{ download.filename }}"{% endif %}>{{ download.title }}</a>
+                <a class="nav-link" href="{{download.url}}" {% if download.filename %}download="{{ download.filename }}"{% else %}target="_blank"{% endif %}>{{ download.title }}</a>
               </li>
             {% endfor %}
           </ul>
@@ -82,7 +112,7 @@ layout: default
           </li>
           {% for download in page.downloads %}
             <li class="nav-item" >
-              <a class="nav-link" href="{{download.url}}" download{% if download.filename %}="{{ download.filename }}"{% endif %}>{{ download.title }}</a>
+              <a class="nav-link" href="{{download.url}}" {% if download.filename %}download="{{ download.filename }}"{% else %}target="_blank"{% endif %}>{{ download.title }}</a>
             </li>
           {% endfor %}
           <li class="nav-item">
