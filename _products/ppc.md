@@ -11,10 +11,10 @@ hero:
       url: /about/contact/
       highlight: true
     - title: Learn more
-      url: "#top"
-downloads:
-  - title: PPC whitepaper
-    url: /downloads/ppc_whitepaper11.pdf
+      url: "#introduction"
+#downloads:
+#  - title: PPC whitepaper
+#    url: /downloads/ppc_whitepaper11.pdf
 
 ---
 
