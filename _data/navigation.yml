@@ -6,6 +6,8 @@ highlight:
     url: /products/vizimax/
   - title: "Modelling & Simulation"
     url: /services/modelling-and-simulation/
+  - title: "MV/LV State Estimation"
+    url: /research/monica/
 
 main:
   - title: "News"

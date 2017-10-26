@@ -139,7 +139,7 @@ Tables!! yaaay!
 | cell4   | cell5   | cell6   |
 |=====
 | Foot1   | Foot2   | Foot3
-{:class="table table-sm table-responsive"}
+{:class="table"}
 
 Vestibulum eleifend ex ut massa congue, laoreet aliquam metus finibus. Curabitur congue eros id eleifend iaculis. Aenean hendrerit metus nibh, vitae efficitur arcu hendrerit sit amet. Aenean id sapien eros. Morbi quis vulputate dolor, eget gravida ipsum. Vestibulum rutrum nisl a orci ultrices lobortis quis efficitur ligula. Nam placerat justo a nibh aliquam, quis cursus turpis sodales. Vivamus vestibulum lectus et blandit fringilla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque ultricies efficitur tortor, quis finibus quam vehicula ut. Donec at quam velit. Praesent luctus neque interdum, ultrices arcu facilisis, feugiat mi. Quisque vitae magna commodo, tempor lacus id, tristique dolor. Quisque ut orci vitae libero viverra cursus. Nam eros elit, rutrum sit amet justo eu, commodo mollis erat. Donec quam sapien, consectetur ut tristique in, porttitor eu urna.
 
