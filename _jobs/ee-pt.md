@@ -2,8 +2,9 @@
 layout: page
 sitemap: false
 title: Electrical Engineer
+menu: about
 active: true
-code: E003
+code: E002
 location: Seville, Spain
 seniority: Internship
 temporarily: Part-time

@@ -1,6 +1,5 @@
 ---
 layout: page
-sitemap: false
 title: Modelling and Simulation
 menu: organization
 ---
@@ -54,5 +53,3 @@ Among the different features and functionalities  that the models provide are:
 *   Digsilent – PowerFactory
 *   PSCAD
 *   ATP
-
-## Ingelectus Experience

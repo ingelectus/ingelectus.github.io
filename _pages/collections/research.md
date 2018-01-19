@@ -34,34 +34,30 @@ Imagine a smart system capable of precisely ascertaining the real status of the 
 
 ## [SmarTap](/research/smartap/){:class="text-dark"}
 
-Imagine a smart system capable of precisely ascertaining the real status of the distribution grid at any given time, in order to prevent and resolve problems. This is the aim of the MONICA Project (Advanced Monitoring and Control of MV and LV Distribution Grids): to develop a technology that enables low and medium-voltage lines to be monitored and diagnosed immediately.
+SmarTap is a technology capable of changing the transformer tap on-load. It works on oil & dry types MV/LV distribution transformers based on power electronics: no mobile (mechanical) power components, almost null maintenance and independent control per phase.
 
 [Continue reading](/research/smartap/)
 
-## [State and Parameter Estimation](/research/state-and-parameter-estimation/){:class="text-dark"}
-
-Imagine a smart system capable of precisely ascertaining the real status of the distribution grid at any given time, in order to prevent and resolve problems. This is the aim of the MONICA Project (Advanced Monitoring and Control of MV and LV Distribution Grids): to develop a technology that enables low and medium-voltage lines to be monitored and diagnosed immediately.
-
-[Continue reading](/research/state-and-parameter-estimation/)
-
 ## [Smart Business Park](/research/smart-business-park/){:class="text-dark"}
 
-Imagine a smart system capable of precisely ascertaining the real status of the distribution grid at any given time, in order to prevent and resolve problems. This is the aim of the MONICA Project (Advanced Monitoring and Control of MV and LV Distribution Grids): to develop a technology that enables low and medium-voltage lines to be monitored and diagnosed immediately.
+Study of a centralized monitoring tool for business parks. This service is being used on project SBP (smart business park) in collaboration with: Endesa Ingeniería, GPtech, Wellness Telecom, Melfosur.
 
 [Continue reading](/research/smart-business-park/)
 
+
 # Renewable Energy
 
-## [CECOVEL](/research/cecovel/){:class="text-dark"}
+## [CECOVEL](http://entrelineas.ree.es/cecovel){:target="_blank"}{:class="text-dark"}
 
-Imagine a smart system capable of precisely ascertaining the real status of the distribution grid at any given time, in order to prevent and resolve problems. This is the aim of the MONICA Project (Advanced Monitoring and Control of MV and LV Distribution Grids): to develop a technology that enables low and medium-voltage lines to be monitored and diagnosed immediately.
+CECOVEL is a project in collaboration with REE and the University of Seville for national electric vehicle consumption forecasting.
 
-[Continue reading](/research/cecovel/)
+[Continue reading](http://entrelineas.ree.es/cecovel){:target="_blank"}
+
 
 # Energy Storage Systems
 
-## [ALMACENA](/research/almacena/){:class="text-dark"}
+## [ALMACENA](http://www.ree.es/es/red21/idi/proyectos-idi/proyecto-almacena){:target="_blank"}{:class="text-dark"}
 
-Imagine a smart system capable of precisely ascertaining the real status of the distribution grid at any given time, in order to prevent and resolve problems. This is the aim of the MONICA Project (Advanced Monitoring and Control of MV and LV Distribution Grids): to develop a technology that enables low and medium-voltage lines to be monitored and diagnosed immediately.
+The project consists of the field installation of an energy storage system, specifically a lithium-ion prismatic battery with a power in the range of 1 MW and a capacity of at least 3 MWh, with the aim to evaluate the technical capacities and characteristics this type of facilities currently offersas a tool to improve the efficiency of the operation of electricity systems. Ingelectus collaborates with Endesa and the University of Seville in the control methodology.
 
-[Continue reading](/research/almacena/)
+[Continue reading](http://www.ree.es/es/red21/idi/proyectos-idi/proyecto-almacena){:target="_blank"}

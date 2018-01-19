@@ -1,19 +1,20 @@
 ---
 layout: page
 sitemap: false
-title: Computer Science Engineer
+title: Software Engineer
+menu: about
 active: true
-code: E004
+code: E003
 location: Seville, Spain
-seniority: Internship
-temporarily: Part-time
+seniority: Entry Level
+temporarily: Full-time
 ---
 
-## Computer Science Engineer (Internship)
+## Software Engineer (Entry Level)
 
 **Information**
 
-* Temporarily: Part-time
+* Temporarily: Full-time
 * Location: Seville, Spain
 * Salary: TBD
 
@@ -24,7 +25,7 @@ temporarily: Part-time
 
 **Qualifications**
 
-* University degree or last year in: industrial engineering, telecommunications engineering, computer science and engineering, mathematics, physics, or related field.
+* University master or degree in: industrial engineering, telecommunications engineering, computer science and engineering, mathematics, physics, or related field.
 * Experience in programming languages, such as Python, Java, C, HTML, CSS and Javascript.
 * Understanding of communication protocols in a web environment: SSL, SFTP, HTTP, ...
 * Understanding of communication protocols in industrial environments: IEC 61850, IEC 60870-5-104, Modbus/RTU, Modbus/TCP, OPC, DNP3, ...
