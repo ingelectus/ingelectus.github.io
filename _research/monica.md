@@ -28,8 +28,8 @@ scrollspy:
       name: Results and Applications
   - name: PASTORA Project
     subspies:
-    - id: project-scope
-      name: Project Scope
+    - id: summary
+      name: Summary
 
 ---
 
@@ -145,7 +145,7 @@ One of the most interesting applications of the SE is the possibility of detecti
 </div>
 
 # Pastora Project
-## Project Scope
+## Summary
 
 Big data has reached the electrical grid and it is going to change everything. The millions of data offered by smart grids will allow system operators to predict and anticipate potential incidents in order to improve the functioning of the network and the quality of service to clients.
 
