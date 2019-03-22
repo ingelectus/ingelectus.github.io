@@ -62,6 +62,8 @@ Functionalities already in use:
 
 Made specially for power plant operators it gives a global view of the hole solar plant paying special attention to what is happening at the point of interconnection and the solar inverters. Very useful during commissioning of the power plant and specially to check TSO functionality requirements. It has the possibility of exporting data to excel files to analyze different events.
 
+![demo](/assets/img/products/pantalla_principal.gif)
+
 ![example image1](/assets/img/products/pantalla_principal.png)
 
 With the configuration suit the plant operator can easily change setpoints and enable or disable PPC functions.
