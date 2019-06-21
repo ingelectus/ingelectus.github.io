@@ -4,7 +4,7 @@ title: Modelling and Simulation
 menu: organization
 ---
 
-# Introduccion
+# Introduction
 Electrical devices modelling and simulation is a service that provide software models of actual power-electronics-based devices and power plant controls by mimicking its behaviour on standard electrical system simulation software, such as PSS/E®, DIgSilent and Matlab/Simulink. Thus, Ingelectus provides a complete overview of the devices (PV, ESS, STATCOM, among others)  and power plant controllers (PPC).
 
 ## Service description

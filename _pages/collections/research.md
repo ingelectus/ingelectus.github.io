@@ -8,6 +8,8 @@ scrollspy:
     subspies:
     - id: monica
       name: MONICA
+    - id: pastora
+      name: PASTORA
     - id: smartap
       name: SmarTap
     - id: state-and-parameter-estimation
@@ -31,6 +33,12 @@ scrollspy:
 Imagine a smart system capable of precisely ascertaining the real status of the distribution grid at any given time, in order to prevent and resolve problems. This is the aim of the MONICA Project (Advanced Monitoring and Control of MV and LV Distribution Grids): to develop a technology that enables low and medium-voltage lines to be monitored and diagnosed immediately.
 
 [Continue reading](/research/monica/)
+
+## [PASTORA](/research/pastora/){:class="text-dark"}
+
+In order to continue developing innovative solutions for smart grids, PASTORA (acronym of Preventive Analysis of Smart Grid with real Time Operation and Renewable Assets Integration), the follow-up project of MONICA, seeks to integrate Artificial Intelligence tools to improve real-time control and preventive maintenance of the grid.
+
+[Continue reading](/research/pastora/)
 
 ## [SmarTap](/research/smartap/){:class="text-dark"}
 
