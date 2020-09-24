@@ -38,5 +38,5 @@ This project — a new step in the digitalisation of the distribution grid — i
 
 With innovation projects like PASTORA, we work to progress in the digitalisation of the distribution grid by integrating artificial intelligence and big data techniques into the energy sector to improve our services.
 
-![funding](https://www.endesa.com/content/dam/enel-es/home/proyectos/imagenes/logos1_MONICA.png)
+![funding](https://www.endesa.com/content/dam/endesa-com/home/proyectos/imagenes/2019/02/15.%20logos-proyecto-pastora.jpg)
 {:class="text-center"}
