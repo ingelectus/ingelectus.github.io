@@ -43,7 +43,7 @@ Ingelectus PPC can be adapted to to comply with the most demanding grid codes: P
 
 ## Ingelectus Experience
 
-Ingelectus PPC is controlling successfully up to **800 MW** in the United States, Canada, Mexico and Spain. 
+Ingelectus PPC is controlling successfully up to **2 GW** in the United States, Canada, Mexico and Spain. 
 
 Sending reports and main signals to a SCADA manufactured by Isotrol.
 
